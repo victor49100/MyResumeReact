@@ -1,9 +1,19 @@
-import {useState} from "react";
+import {useState,useEffect} from "react";
 import {Link} from "react-router-dom";
 
 
 function Accueil(props) {
-    const [age, setAge] = useState(22)
+    const [age, setAge] = useState(0);
+    useEffect(() => {
+        const dateNaissance = new Date('2003-06-19');
+        const aujourdHui = new Date();
+        let calculAge = aujourdHui.getFullYear() - dateNaissance.getFullYear();
+        const mois = aujourdHui.getMonth() - dateNaissance.getMonth();
+        if (mois < 0 || (mois === 0 && aujourdHui.getDate() < dateNaissance.getDate())) {
+            calculAge--;
+        }
+        setAge(calculAge);
+    }, []);
 
     return (
         <>

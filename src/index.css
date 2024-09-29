@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'monaco';
+    src: url('public/font/Monaco.ttf') format('truetype');
+}
+
 
 header {
     margin-bottom: 10px;
