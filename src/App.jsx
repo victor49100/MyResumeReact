@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Accueil from './Accueil/Accueil.jsx'; // Vérifie la casse des noms
-import Projet from './Projets/projet.jsx'; // Assure-toi que ce fichier existe
+import Accueil from './Accueil/Accueil.jsx';
+import Projet from './Projets/projet.jsx';
 
 const router = createBrowserRouter([
     {
