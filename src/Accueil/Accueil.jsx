@@ -20,7 +20,7 @@ function Accueil(props) {
         <>
             <Header />
             <div id="run">
-                <div style={{ color: '#50fa7b' }}>Moreau_Victor@Pc:~/home</div>
+                <div style={{ color: '#50fa7b'}}>Moreau_Victor@Pc:~/home</div>
                 <div>$ neofetch</div>
             </div>
 
